@@ -19,12 +19,6 @@ function Page(props) {
   }
   const colorStyle = {
     backgroundColor: props.color,
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'row',
-    fontFamily: 'Ubuntu',
-    color: '#707070',
   }
   return (
     /*
@@ -33,9 +27,10 @@ function Page(props) {
       {props.children}
     </div>
     */
-    <div className='page'>
+    <div className='page' style={colorStyle}>
       {props.content}
       {props.children}
+      {props.img}
     </div>
   );
 }
