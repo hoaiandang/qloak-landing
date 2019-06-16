@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  scroll-behavior: smooth;
+  height: 100vh;
+  width: 100vw;
+  overflow: scroll;
 }
 
 .App-logo {
@@ -33,12 +37,14 @@
 }
 
 #footer {
-  width: 100vw;
+  width: 80vw;
   height: 240px;
   background-color: #707070;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 
-#subscription {
+#subscribe {
   width: 100vw;
   height: 200px;
   background-color: #F7F5F2;
@@ -62,6 +68,12 @@ h2 {
   color: #EF9100;
 }
 
+h3 {
+  font-size: 36px;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
 input {
   background-color: transparent;
   box-shadow: none;
@@ -74,9 +86,14 @@ input {
   margin-bottom: 0px;
   margin-top: 0px;
   width: 240px;
+  outline: none;
 }
 
-.page {
+a {
+  text-decoration: none;
+}
+
+page {
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -89,6 +106,7 @@ input {
   font-size: 18px;
   color: #707070;
 }
+
 
 .button {
   background-color: #01B0A5;
@@ -104,6 +122,17 @@ input {
   margin-top: 0px;
   border-radius: 40px;
   box-shadow: 2px 2px 6px #BCBCBC;
+}
+
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:active {
+  cursor: pointer;
+  background-color: #038088;
+  box-shadow: 0px 0px 0px white;
 }
 
 .button2 {
@@ -122,26 +151,52 @@ input {
   box-shadow: 2px 2px 6px #BCBCBC;
 }
 
-.button:hover {
+.button2:hover {
   cursor: pointer;
+}
+
+.button2:active {
+  cursor: pointer;
+  background-color: #038088;
+  box-shadow: 0px 0px 0px white;
+}
+
+.social {
+  height: 36px;
+  margin: 8px;
+}
+
+.social:hover {
+  cursor: pointer;
+}
+
+.social:active {
+  opacity: 0.6;
 }
 
 .row-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 
 .column-container {
   flex-direction: column;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .hero-one {
-  margin-left: 80px;
-  margin-top: 300px;
+  margin-left: 140px;
+  margin-top: 480px;
   height: 900px;
+}
+
+.pin {
+  margin-left: 8px;
+  height: 20px;
 }
 
 .text-box {

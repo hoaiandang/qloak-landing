@@ -19,6 +19,7 @@ function Page(props) {
   }
   const colorStyle = {
     backgroundColor: props.color,
+    height: props.height,
   }
   return (
     /*
@@ -27,7 +28,7 @@ function Page(props) {
       {props.children}
     </div>
     */
-    <div className='page' style={colorStyle}>
+    <div ref={props.ref} className='page' style={colorStyle}>
       {props.content}
       {props.children}
       {props.img}
