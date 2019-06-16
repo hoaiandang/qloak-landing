@@ -50,7 +50,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 h1 {
@@ -72,6 +72,7 @@ input {
   color: #919191;
   margin: 36px;
   margin-bottom: 0px;
+  margin-top: 0px;
   width: 240px;
 }
 
@@ -102,6 +103,23 @@ input {
   margin-bottom: 0px;
   margin-top: 0px;
   border-radius: 40px;
+  box-shadow: 2px 2px 6px #BCBCBC;
+}
+
+.button2 {
+  background-color: #01B0A5;
+  color: white;
+  font-family: 'Ubuntu';
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 10px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  border-radius: 40px;
+  box-shadow: 2px 2px 6px #BCBCBC;
 }
 
 .button:hover {

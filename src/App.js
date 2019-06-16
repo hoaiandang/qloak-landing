@@ -115,7 +115,7 @@ const Subscription = (
     <form className='row-container' style={{alignItems: 'flex-end'}}>
       <div>Newsletter</div>
       <input type="text" value='Email'></input>
-      <submit className='button'>Subscribe</submit>
+      <submit className='button2'>Subscribe</submit>
     </form>
   </div>
 )
