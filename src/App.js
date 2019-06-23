@@ -217,7 +217,7 @@ class App extends React.Component {
           <div className='row-container' style={{justifyContent: 'flex-start'}}>
             <h3 style={{color: 'white'}}>Qloak</h3><h3 style={{color: '#FFD84D'}}>.</h3>
           </div>
-          <div className='text-box' style={{color: 'white'}}>
+          <div className='text-box' id='footer-text' style={{color: 'white'}}>
             <div>Have questions?</div>
             <div>Contact us at info@qloakapp.com</div>
           </div>
@@ -247,7 +247,7 @@ class App extends React.Component {
             {/*HeroFour*/}
             {PageFour}
           </page>
-          <page>
+          <page id='page-five-container'>
             {PageFive}
             {HeroFive}
           </page>

@@ -74,6 +74,10 @@ h3 {
   padding-bottom: 20px;
 }
 
+h4 {
+  font-size: 24px;
+}
+
 input {
   background-color: transparent;
   box-shadow: none;
@@ -170,8 +174,6 @@ page {
   font-size: 18px;
   color: #434343;
 }
-
-
 
 .button {
   background-color: #347593;
@@ -270,10 +272,6 @@ page {
   margin-right: -100px;
 }
 
-h4 {
-  font-size: 24px;
-}
-
 #page-three {
   margin-bottom: 20px;
 }
@@ -361,6 +359,9 @@ h4 {
   page {
     flex-direction: column;
   }
+  #footer-text {
+    font-size: 14px;
+  }
   #hero-one {
     margin-top: 0px;
     height: 500px;
@@ -368,8 +369,8 @@ h4 {
     margin-left: 0px;
   }
   #hero-two {
-    margin-top: -240px;
-    margin-bottom: -760px;
+    margin-top: -180px;
+    margin-bottom: -820px;
     margin-right: 0px;
   }
   box {
@@ -378,6 +379,9 @@ h4 {
   }
   #page-three-container {
     height: 1100px;
+  }
+  #page-five-container {
+    height: 800px;
   }
   #learn-more {
     height: 1000px;
@@ -405,6 +409,32 @@ h4 {
     padding-top: 80px;
   }
   .text-box {
-    width: 80vw;
+    width: 60vw;
   }
+  #hero-five {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  h1 {
+    margin: 0;
+    font-size: 48px;
+  }
+
+  h2 {
+    color: #EF9100;
+  }
+
+  h3 {
+    font-size: 36px;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+  #social-bar {
+    margin-left: -40px;
+  }
+
 }
