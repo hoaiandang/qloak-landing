@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import hero from './img/on-iPhone.png';
 import pin from './img/pin.png';
+import california from './img/california.png';
 import twitter from './img/twitter.png';
 import instagram from './img/instagram.png';
 import facebook from './img/facebook.png';
@@ -49,7 +50,7 @@ const rowContainer = {
 }
 
 const buttonStyle = {
-  backgroundColor: '#01B0A5',
+  backgroundColor: '#347593',
   color: 'white',
   fontFamily: 'Ubuntu',
   fontSize: 20,
@@ -68,7 +69,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: 'Please enter your email.'
+      value: ''
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -79,19 +80,19 @@ class App extends React.Component {
   }
 
   handleSubmit(event) {
-    alert('An email was submitted: ' + this.state.value);
-    fetch('https://evening-taiga-43402.herokuapp.com/contacts', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ firstName: 'name', email: this.state.value })
-    })
-    alert('part 2: ' + this.state.value);
+    if (this.state.value == '') {
+      alert('Please enter your email.');
+    } else {
+      fetch('/contacts', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ email: this.state.value })
+      })
+      alert('Thank you for subscribing!');
+    }
     event.preventDefault();
-    // complex POST request with JSON, headers:
-    alert('part3 ' + this.state.value);
-
   }
 
   render() {
@@ -102,16 +103,16 @@ class App extends React.Component {
                 alignItems: 'flex-start'}}>
         <div className='column-container' style={{alignItems: 'flex-end'}}>
           <div className='row-container'>
-            <h1 >Qloak</h1><h1 style={{color: '#01B0A5'}}>.</h1>
+            <h1 >Qloak</h1><h1 style={{color: '#FFD84D'}}>.</h1>
           </div>
-          <div className='row-container'>
+          <div className='row-container' id='fyp'>
             <h4 style={{margin: 0}}>Find your place</h4>
             <img src={pin} className='pin'/>
           </div>
         </div>
         <div className='row-container'>
           <a href="#subscribe" className='button'>Sign Up</a>
-          <a href="#learn-more" className='button'>Learn More</a>
+          <a href="#learn-more" className='button button-sub'>Learn More</a>
         </div>
       </div>
     )
@@ -131,21 +132,33 @@ class App extends React.Component {
     )
 
     const HeroTwo = (
-      <img src={hero} id="hero-two" alt="phone screen" />
+        <img src={hero} id="hero-two" alt="phone screen" />
     )
 
     const PageThree = (
-        <div className='text-box'>
-          <h2>Get connected.</h2>
+        <div className='text-box' id='page-three'>
+          <h2 style={{color: '#347593'}}>Get connected.</h2>
           <p>Whether you are looking for a place to play, eat, shop,
             manage your health, or find employment, we have you covered.</p>
         </div>
     )
 
     const HeroThree = (
-      <div className='row-container'>
-        <div></div>
-      </div>
+      <div>
+        <div className='row-container' style={{flexWrap: 'wrap'}}>
+          <box>
+            <box-title>d</box-title>
+            <box-text>aasddfsd kljasfl;dsf ksjf;l kajsf; ljsadfkljsdl;</box-text>
+          </box>
+          <box>
+            <box-title>d</box-title>
+            <box-text>aasddfsd fkljasfl;dsf ksjf;l kajsf; ljsadfkljsdl;</box-text>
+          </box><box>
+            <box-title>d</box-title>
+            <box-text>aasddfsdf kljasfl;dsf ksjf;l kajsf; ljsadfkljsdl;</box-text>
+          </box>
+        </div>
+    </div>
     )
 
     const PageFour = (
@@ -166,8 +179,8 @@ class App extends React.Component {
     )
 
     const PageFive = (
-        <div className='text-box'>
-          <h2>Queer. Local. Qloak.</h2>
+        <div className='text-box' id='qlq'>
+          <h2 style={{color: '#347593'}}>Queer. Local. Qloak.</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -176,12 +189,12 @@ class App extends React.Component {
     )
 
     const HeroFive = (
-      <img src={pin} id="hero-five" alt="destination pin" />
+        <img src={california} id="hero-five" alt="destination pin" />
     )
 
     const Subscription = (
       <div id='subscribe'>
-        <form className='row-container' style={{alignItems: 'flex-end'}}
+        <form id='email-container' style={{flexWrap: 'wrap'}}
           onSubmit={this.handleSubmit}>
           <div>Newsletter</div>
           <input type="text" placeholder='Email' onChange={this.handleChange}/>
@@ -202,7 +215,7 @@ class App extends React.Component {
       <div id='footer' className='row-container' style={{justifyContent: 'space-between'}}>
         <div className='column-container' style={{alignItems: 'flex-start'}}>
           <div className='row-container' style={{justifyContent: 'flex-start'}}>
-            <h3 style={{color: 'white'}}>Qloak</h3><h3 style={{color: '#01B0A5'}}>.</h3>
+            <h3 style={{color: 'white'}}>Qloak</h3><h3 style={{color: '#FFD84D'}}>.</h3>
           </div>
           <div className='text-box' style={{color: 'white'}}>
             <div>Have questions?</div>
@@ -223,16 +236,20 @@ class App extends React.Component {
             {HeroTwo}
             {PageTwo}
           </page>
-          <page className='column-container'>
-            {PageThree}
-          </page>
+          <div className='column-container' style={{justifyContent: 'flex-start'}}>
+            <page className='column-container' id='page-three-container' style={{backgroundColor: 'none'}}>
+              {PageThree}
+              {HeroThree}
+            </page>
+            <blue/>
+          </div>
           <page style={{backgroundColor: '#F7F5F2'}}>
             {/*HeroFour*/}
             {PageFour}
           </page>
           <page>
-            {/*HeroFive*/}
             {PageFive}
+            {HeroFive}
           </page>
           {Subscription}
           {Footer}

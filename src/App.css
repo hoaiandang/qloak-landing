@@ -39,7 +39,7 @@
 #footer {
   width: 80vw;
   height: 240px;
-  background-color: #707070;
+  background-color: #434343;
   padding-left: 10vw;
   padding-right: 10vw;
 }
@@ -51,7 +51,7 @@
   font-family: 'Ubuntu';
   font-weight: bold;
   font-size: 18px;
-  color: #919191;
+  color: #707070;
 
   display: flex;
   justify-content: center;
@@ -81,7 +81,7 @@ input {
   border-bottom: 1px solid;
   font-family: 'Ubuntu';
   font-size: 16px;
-  color: #919191;
+  color: #707070;
   margin: 36px;
   margin-bottom: 0px;
   margin-top: 0px;
@@ -91,6 +91,70 @@ input {
 
 a {
   text-decoration: none;
+}
+
+box {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 20px;
+  margin-top: 60px;
+  margin-bottom: -10vh;
+  z-index: 1;
+  text-align: left;
+}
+
+box-text {
+  background-color: #F7F5F2;
+  padding: 40px;
+  border-radius: 20px;
+  padding-top: 100px;
+  margin-top: -80px;
+  width: 100%;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+box-title {
+  color: white;
+  background-color: #FFD84D;
+  border-radius: 20px 20px 20px 0px;
+  padding: 40px;
+  padding-bottom: 0px;
+  height: 40px;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+}
+
+circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #FFD84D;
+  position: relative;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #FFD84D;
+  position: relative;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+
+blue {
+  background-color: #347593;
+  width: 100vw;
+  height: 40vh;
+  z-index: 0;
+  margin-top: -40vh;
 }
 
 page {
@@ -104,12 +168,13 @@ page {
   flex-direction: row;
   font-family: 'Ubuntu';
   font-size: 18px;
-  color: #707070;
+  color: #434343;
 }
 
 
+
 .button {
-  background-color: #01B0A5;
+  background-color: #347593;
   color: white;
   font-family: 'Ubuntu';
   font-size: 20px;
@@ -120,8 +185,17 @@ page {
   margin: 10px;
   margin-bottom: 0px;
   margin-top: 0px;
-  border-radius: 40px;
-  box-shadow: 2px 2px 6px #BCBCBC;
+  border-radius: 40px 40px 0px 40px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-width: 3px;
+  border-color: #347593;
+  border-style: solid;
+}
+
+.button-sub {
+  border-radius: 0px 40px 40px 40px;
+  background-color: white;
+  color: #347593;
 }
 
 
@@ -132,11 +206,13 @@ page {
 .button:active {
   cursor: pointer;
   background-color: #038088;
-  box-shadow: 0px 0px 0px white;
+  border-color: #038088;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  color: white;
 }
 
 .button2 {
-  background-color: #01B0A5;
+  background-color: #347593;
   color: white;
   font-family: 'Ubuntu';
   font-size: 16px;
@@ -149,7 +225,7 @@ page {
   margin-top: 0px;
   border-radius: 40px;
   border-bottom: 0px solid;
-  box-shadow: 2px 2px 6px #BCBCBC;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   width: auto;
 }
 
@@ -160,7 +236,7 @@ page {
 .button2:active {
   cursor: pointer;
   background-color: #038088;
-  box-shadow: 0px 0px 0px white;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 }
 
 .social {
@@ -190,33 +266,78 @@ page {
   align-items: center;
 }
 
+#fyp {
+  margin-right: -100px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+#page-three {
+  margin-bottom: 20px;
+}
+
 #hero-one {
-  margin-left: 140px;
+  margin-left: 8vw;
   margin-top: 480px;
   height: 900px;
-  -webkit-filter: drop-shadow(8px 8px 4px #BCBCBC);
-  filter: drop-shadow(8px 8px 4px #BCBCBC);
+  -webkit-filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+  filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
 }
 
 #hero-two {
   margin-right: 140px;
   height: 500px;
-  -webkit-filter: drop-shadow(4px 4px 4px #BCBCBC);
-  filter: drop-shadow(4px 4px 4px #BCBCBC);
+  -webkit-filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+  filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+  z-index: 1;
 }
 
 #hero-four {
   margin-right: 120px;
   height: 200px;
-  -webkit-filter: drop-shadow(3px 3px 3px #BCBCBC);
-  filter: drop-shadow(3px 3px 3px #BCBCBC);
+  -webkit-filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+  filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
 }
 
 #hero-five {
-  margin-right: 120px;
+  margin-left: 20px;
+  height: 320px;
+  -webkit-filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+  filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+  z-index: 1;
+}
+
+#circle-two-1 {
+  margin-top: -300px;
+  margin-left: -100px;
+  width: 300px;
+  height: 300px;
+  background-color: #347593;
+}
+
+#circle-two-2 {
+  margin-top: -520px;
+  margin-left: 160px;
+  width: 160px;
+  height: 160px;
+  background-color: #347593;
+}
+
+#circle-five {
+  margin-top: -300px;
+  margin-left: 80px;
+  width: 200px;
   height: 200px;
-  -webkit-filter: drop-shadow(3px 3px 3px #BCBCBC);
-  filter: drop-shadow(3px 3px 3px #BCBCBC);
+}
+
+#hero-five-container {
+  margin-top: -100px;
+}
+
+#hero-two-container {
+  margin-top: -360px;
 }
 
 .pin {
@@ -227,4 +348,63 @@ page {
 .text-box {
   width: 360px;
   text-align: left;
+}
+
+#email-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@media only screen and (max-width: 1000px) {
+  page {
+    flex-direction: column;
+  }
+  #hero-one {
+    margin-top: 0px;
+    height: 500px;
+    margin-bottom: -500px;
+    margin-left: 0px;
+  }
+  #hero-two {
+    margin-top: -240px;
+    margin-bottom: -760px;
+    margin-right: 0px;
+  }
+  box {
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+  #page-three-container {
+    height: 1100px;
+  }
+  #learn-more {
+    height: 1000px;
+  }
+  .button2 {
+    margin-top: 20px;
+  }
+  .button {
+    font-size: 14px;
+  }
+  input {
+    margin-top: 20px;
+    width: 360px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+  }
+  #email-container {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #qlq {
+    padding-top: 80px;
+  }
+  .text-box {
+    width: 80vw;
+  }
 }
