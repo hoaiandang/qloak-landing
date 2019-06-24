@@ -123,8 +123,8 @@ class App extends React.Component {
 
     const PageTwo = (
         <div  className='text-box'>
-          <h2 style={{color: '#038088'}}><b style={{color: '#F1C232'}}>
-            Finally</b>, queer friendly spaces housed on one platform.
+          <h2 style={{color: '#038088'}}><i style={{color: '#F1C232'}}>
+            Finally</i>, queer friendly spaces housed on one platform.
             Find your place.</h2>
         </div>
     )
@@ -180,7 +180,7 @@ class App extends React.Component {
           <p>
             Qloak’s mission is to raise the wellbeing of the
             LGBTQ+ community by centralizing information about queer inclusive
-            spaces on one /free/ user friendly platform.
+            spaces on one <i style={{color: '#038088'}}>free</i> user friendly platform.
           </p>
         </div>
     )
@@ -241,18 +241,18 @@ class App extends React.Component {
             {HeroOne}
           </page>
           <div className='column-container' style={{justifyContent: 'flex-start'}}>
-            <page className='column-container' id='page-three-container' style={{backgroundColor: '#F7F5F2'}}>
+            <page className='column-container' id="learn-more" style={{backgroundColor: '#F7F5F2'}}>
               {PageTwo}
               {HeroThree}
             </page>
             <blue/>
           </div>
-          <page id="learn-more" style={{backgroundColor: 'none'}}>
+          <page id='page-three-container' style={{backgroundColor: 'none'}}>
             {HeroTwo}
             {PageThree}
           </page>
 
-          <page style={{backgroundColor: '#F7F5F2'}}>
+          <page style={{backgroundColor: '#F7F5F2'}} id='page-four-container'>
             {HeroFour}
             {PageFour}
           </page>

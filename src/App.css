@@ -381,22 +381,34 @@ page {
     margin-left: 0px;
   }
   #hero-two {
-    margin-top: -180px;
-    margin-bottom: -820px;
+    margin-top: -100px;
+    margin-bottom: -1100px;
     margin-right: 0px;
+  }
+  #hero-four {
+    margin-top: -160px;
+    margin-bottom: -880px;
+    margin-right: 0px;
+  }
+  #hero-five {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   box {
     margin-bottom: 0px;
     margin-top: 20px;
   }
   #page-three-container {
+    height: 1340px;
+  }
+  #page-four-container {
     height: 1100px;
   }
   #page-five-container {
     height: 800px;
   }
   #learn-more {
-    height: 1000px;
+    height: 1240px;
   }
   .button2 {
     margin-top: 20px;
@@ -421,11 +433,7 @@ page {
     padding-top: 80px;
   }
   .text-box {
-    width: 60vw;
-  }
-  #hero-five {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    width: 70vw;
   }
   h1 {
     margin: 0;
@@ -434,6 +442,7 @@ page {
 
   h2 {
     color: #F1C232;
+    font-size: 24px;
   }
 
   h3 {
@@ -441,12 +450,15 @@ page {
     margin: 0;
     padding-bottom: 20px;
   }
-
   h4 {
     font-size: 16px;
   }
+  .social {
+    height: 32px;
+    margin: 8px;
+  }
   #social-bar {
-    margin-left: -40px;
+    margin-left: -80px;
   }
 
 }
