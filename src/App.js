@@ -103,8 +103,8 @@ class App extends React.Component {
         style={{height: '40vh',
                 justifyContent: 'space-around',
                 alignItems: 'flex-start'}}>
-        <div className='column-container' style={{alignItems: 'flex-end'}}>
-          <h1 >Qloak.</h1>
+        <div id='qloak' className='column-container' style={{alignItems: 'flex-end'}}>
+          <h1 id='qloak' >Qloak.</h1>
           <div className='row-container' id='fyp'>
             <h4 style={{margin: 0}}>Find your place</h4>
             <img src={pin} className='pin'/>

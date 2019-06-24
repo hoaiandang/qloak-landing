@@ -296,7 +296,7 @@ page {
 
 #fyp {
   margin-right: -100px;
-  width: 200px;
+  width: 220px;
 }
 
 #page-three {
@@ -473,6 +473,9 @@ page {
   }
   #social-bar {
     margin-left: -80px;
+  }
+  #qloak {
+    padding-left: 32px;
   }
 
 }
