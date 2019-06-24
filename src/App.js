@@ -1,5 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import hero from './img/on-iPhone.png';
+import hero2 from './img/on-iPhone-2.png';
+import polaroids from './img/polaroids.png';
 import pin from './img/pin.png';
 import california from './img/california.png';
 import twitter from './img/twitter.png';
@@ -132,7 +134,7 @@ class App extends React.Component {
     )
 
     const HeroTwo = (
-        <img src={hero} id="hero-two" alt="phone screen" />
+        <img src={hero2} id="hero-two" alt="phone screen" />
     )
 
     const PageThree = (
@@ -175,7 +177,7 @@ class App extends React.Component {
     )
 
     const HeroFour = (
-      <img src={team} id="hero-four" alt="hands together" />
+      <img src={polaroids} id="hero-four" alt="hands together" />
     )
 
     const PageFive = (
@@ -244,7 +246,7 @@ class App extends React.Component {
             <blue/>
           </div>
           <page style={{backgroundColor: '#F7F5F2'}}>
-            {/*HeroFour*/}
+            {HeroFour}
             {PageFour}
           </page>
           <page id='page-five-container'>
