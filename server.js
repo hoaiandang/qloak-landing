@@ -46,6 +46,12 @@ mongodb.MongoClient.connect(uri, function (err, database) {
 
 });
 
+app.use(function(request, response){
+  if(request.protocol === "http"){
+    response.redirect("https://" + request.headers.host + request.url);
+  }
+});
+
 app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
@@ -91,7 +97,6 @@ app.post("/contacts", function(req, res) {
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname+'/build/index.html'));
 });
-
 
 var server = app.listen(port);
 var serverPort = server.address().port;
