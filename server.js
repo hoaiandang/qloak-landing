@@ -15,6 +15,12 @@ var app = express();
 app.use(express.static(path.join(__dirname, 'build')));
 app.use(bodyParser.json());
 
+app.use(function(request, response){
+  if(!request.secure){
+    response.redirect("https://" + request.headers.host + request.url);
+  }
+});
+
 //https://daveceddia.com/deploy-react-express-app-heroku/
 //https://www.sitepoint.com/deploy-rest-api-in-30-mins-mlab-heroku/
 
