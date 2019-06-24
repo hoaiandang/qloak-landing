@@ -12,14 +12,13 @@ const port = process.env.PORT || 5000;
 const uri = "mongodb+srv://qloak:bigqloakideas@cluster0-lbws3.azure.mongodb.net/test?retryWrites=true&w=majority";
 
 var app = express();
+app.use(function(request, response){
+    response.redirect("https://" + request.headers.host + request.url);
+});
 app.use(express.static(path.join(__dirname, 'build')));
 app.use(bodyParser.json());
 
-app.use(function(request, response){
-  if(!request.secure){
-    response.redirect("https://" + request.headers.host + request.url);
-  }
-});
+
 
 //https://daveceddia.com/deploy-react-express-app-heroku/
 //https://www.sitepoint.com/deploy-rest-api-in-30-mins-mlab-heroku/
