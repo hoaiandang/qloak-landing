@@ -383,12 +383,13 @@ page {
   #hero-two {
     margin-top: -100px;
     margin-bottom: -1100px;
-    margin-right: 0px;
+    margin-left: 80px;
   }
   #hero-four {
     margin-top: -160px;
     margin-bottom: -880px;
     margin-right: 0px;
+    height: 440px;
   }
   #hero-five {
     padding-top: 40px;
