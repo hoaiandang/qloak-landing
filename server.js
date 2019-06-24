@@ -6,13 +6,17 @@ const url = require('url');
 var ObjectID = mongodb.ObjectID;
 
 var CONTACTS_COLLECTION = "contacts";
-process.env.HTTPS = 'true';
 const dev = process.env.NODE_ENV !== 'production';
 const port = process.env.PORT || 5000;
 const uri = "mongodb+srv://qloak:bigqloakideas@cluster0-lbws3.azure.mongodb.net/test?retryWrites=true&w=majority";
 
 var app = express();
 
+app.use(function(request, response){
+  if(!request.secure){
+    response.redirect("https://" + request.headers.host + request.url);
+  }
+});
 app.use(express.static(path.join(__dirname, 'build')));
 app.use(bodyParser.json());
 
