@@ -52,7 +52,7 @@ const rowContainer = {
 }
 
 const buttonStyle = {
-  backgroundColor: '#347593',
+  backgroundColor: '#038088',
   color: 'white',
   fontFamily: 'Ubuntu',
   fontSize: 20,
@@ -104,9 +104,7 @@ class App extends React.Component {
                 justifyContent: 'space-around',
                 alignItems: 'flex-start'}}>
         <div className='column-container' style={{alignItems: 'flex-end'}}>
-          <div className='row-container'>
-            <h1 >Qloak</h1><h1 style={{color: '#FFD84D'}}>.</h1>
-          </div>
+          <h1 >Qloak.</h1>
           <div className='row-container' id='fyp'>
             <h4 style={{margin: 0}}>Find your place</h4>
             <img src={pin} className='pin'/>
@@ -125,11 +123,9 @@ class App extends React.Component {
 
     const PageTwo = (
         <div  className='text-box'>
-          <h2>Build community in spaces that support you.</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat.</p>
+          <h2 style={{color: '#038088'}}><b style={{color: '#F1C232'}}>
+            Finally</b>, queer friendly spaces housed on one platform.
+            Find your place.</h2>
         </div>
     )
 
@@ -139,9 +135,16 @@ class App extends React.Component {
 
     const PageThree = (
         <div className='text-box' id='page-three'>
-          <h2 style={{color: '#347593'}}>Get connected.</h2>
-          <p>Whether you are looking for a place to play, eat, shop,
-            manage your health, or find employment, we have you covered.</p>
+          <h2 >Get connected.</h2>
+          <ul>
+            <l>Whether you are looking for a place to play, eat, shop,
+              manage your health, or find employment, we have you covered.</l>
+            <l>Play- events, venues, bars and collectives</l>
+            <l>Eat- restaurants, coffee shops, pop-ups</l>
+            <l>Shop- retailers, vendors, independent makers</l>
+            <l>Work- job opportunities that are equipped to support LGBTQ+ folx</l>
+            <l>Health-  mental health support, physical fitness, primary care doctors, etc.</l>
+          </ul>
         </div>
     )
 
@@ -149,15 +152,18 @@ class App extends React.Component {
       <div>
         <div className='row-container' style={{flexWrap: 'wrap'}}>
           <box>
-            <box-title>d</box-title>
-            <box-text>aasddfsd kljasfl;dsf ksjf;l kajsf; ljsadfkljsdl;</box-text>
+            <box-title>Individuality matters.</box-title>
+            <box-text>Choose search filters based on your own remarkable
+              identity </box-text>
           </box>
           <box>
-            <box-title>d</box-title>
-            <box-text>aasddfsd fkljasfl;dsf ksjf;l kajsf; ljsadfkljsdl;</box-text>
+            <box-title><div>Your voice </div><div>matters.</div></box-title>
+            <box-text>Share your experiences and submit recommendations for
+              LGBTQ+ friendly listings in your area.</box-text>
           </box><box>
-            <box-title>d</box-title>
-            <box-text>aasddfsdf kljasfl;dsf ksjf;l kajsf; ljsadfkljsdl;</box-text>
+            <box-title>Our community matters.</box-title>
+            <box-text>Support spaces doing good work for the LGBTQ+
+              community.</box-text>
           </box>
         </div>
     </div>
@@ -165,14 +171,17 @@ class App extends React.Component {
 
     const PageFour = (
         <div className='text-box'>
-          <h2>Our Mission.</h2>
-          <p>Creating one central hub of
-          queer friendly spaces. Promoting
-          inclusion for LQBTQ+ identified
-          folx. Amplifying the voices in our
-          community. Increasing visibility of
-          the resources that our users need
-          the most. Keeping it local.</p>
+          <h2 style={{color: '#038088'}}>Our Mission.</h2>
+          <p>The queer community is unique, diverse, and important, and every
+            person deserves a safe space to be themselves. We believe in
+            creating a platform that enables individuals to find a place that
+            support their own remarkable identity.
+          </p>
+          <p>
+            Qloak’s mission is to raise the wellbeing of the
+            LGBTQ+ community by centralizing information about queer inclusive
+            spaces on one /free/ user friendly platform.
+          </p>
         </div>
     )
 
@@ -182,11 +191,8 @@ class App extends React.Component {
 
     const PageFive = (
         <div className='text-box' id='qlq'>
-          <h2 style={{color: '#347593'}}>Queer. Local. Qloak.</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat.</p>
+          <h2>Queer. Local. Qloak.</h2>
+          <p>Stay tuned for more exciting updates!</p>
         </div>
     )
 
@@ -207,9 +213,9 @@ class App extends React.Component {
 
     const Social = (
       <div id='social-bar' className='row-container'>
-        <a href="/" target='_blank'><img className='social' src={twitter}/></a>
-        <a href="/" target='_blank'><img className='social' src={instagram}/></a>
-        <a href="/" target='_blank'><img className='social' src={facebook}/></a>
+        <a href="https://twitter.com/Qloakapp" target='_blank'><img className='social' src={twitter}/></a>
+        <a href="https://www.instagram.com/Qloak.app/" target='_blank'><img className='social' src={instagram}/></a>
+        <a href="https://www.facebook.com/pg/Qloak-402642527005313/about/?ref=page_internal" target='_blank'><img className='social' src={facebook}/></a>
       </div>
     )
 
@@ -221,7 +227,7 @@ class App extends React.Component {
           </div>
           <div className='text-box' id='footer-text' style={{color: 'white'}}>
             <div>Have questions?</div>
-            <div>Contact us at info@qloakapp.com</div>
+            <div>Contact us at <a href="mailto:info@qloakapp.com">info@qloakapp.com</a></div>
           </div>
         </div>
         {Social}
@@ -234,17 +240,18 @@ class App extends React.Component {
             {PageOne}
             {HeroOne}
           </page>
-          <page id="learn-more" style={{backgroundColor: '#F7F5F2'}}>
-            {HeroTwo}
-            {PageTwo}
-          </page>
           <div className='column-container' style={{justifyContent: 'flex-start'}}>
-            <page className='column-container' id='page-three-container' style={{backgroundColor: 'none'}}>
-              {PageThree}
+            <page className='column-container' id='page-three-container' style={{backgroundColor: '#F7F5F2'}}>
+              {PageTwo}
               {HeroThree}
             </page>
             <blue/>
           </div>
+          <page id="learn-more" style={{backgroundColor: 'none'}}>
+            {HeroTwo}
+            {PageThree}
+          </page>
+
           <page style={{backgroundColor: '#F7F5F2'}}>
             {HeroFour}
             {PageFour}

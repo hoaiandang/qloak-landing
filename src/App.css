@@ -65,7 +65,9 @@ h1 {
 }
 
 h2 {
-  color: #EF9100;
+  color: #F1C232;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.33);
+
 }
 
 h3 {
@@ -95,6 +97,13 @@ input {
 
 a {
   text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+l {
+  list-style-type: disc;
+  display: list-item;
+  margin-bottom: 12px;
 }
 
 box {
@@ -102,7 +111,7 @@ box {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 180px;
+  width: 200px;
   padding-left: 40px;
   padding-right: 40px;
   margin: 20px;
@@ -118,27 +127,33 @@ box-text {
   border-radius: 20px;
   padding-top: 100px;
   margin-top: -80px;
+  height: 100px;
   width: 100%;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 }
 
 box-title {
   color: white;
-  background-color: #FFD84D;
+  font-weight: bold;
+  background-color: #F1C232;
   border-radius: 20px 20px 20px 0px;
   padding: 40px;
-  padding-bottom: 0px;
+  padding-bottom: 20px;
+  font-size: 20px;
   height: 40px;
   width: 100%;
   z-index: 1;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 circle {
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  background-color: #FFD84D;
+  background-color: #F1C232;
   position: relative;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 }
@@ -147,14 +162,14 @@ circle {
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  background-color: #FFD84D;
+  background-color: #F1C232;
   position: relative;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 }
 
 
 blue {
-  background-color: #347593;
+  background-color: #038088;
   width: 100vw;
   height: 40vh;
   z-index: 0;
@@ -176,7 +191,7 @@ page {
 }
 
 .button {
-  background-color: #347593;
+  background-color: #038088;
   color: white;
   font-family: 'Ubuntu';
   font-size: 20px;
@@ -190,14 +205,14 @@ page {
   border-radius: 40px 40px 0px 40px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   border-width: 3px;
-  border-color: #347593;
+  border-color: #038088;
   border-style: solid;
 }
 
 .button-sub {
   border-radius: 0px 40px 40px 40px;
   background-color: white;
-  color: #347593;
+  color: #038088;
 }
 
 
@@ -214,7 +229,7 @@ page {
 }
 
 .button2 {
-  background-color: #347593;
+  background-color: #038088;
   color: white;
   font-family: 'Ubuntu';
   font-size: 16px;
@@ -285,18 +300,16 @@ page {
 }
 
 #hero-two {
-  margin-right: 140px;
-  height: 500px;
+  margin-right: 40px;
+  height: 580px;
   -webkit-filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
   filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
   z-index: 1;
 }
 
 #hero-four {
-  margin-right: 120px;
-  height: 200px;
-  -webkit-filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
-  filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+  margin-right: 80px;
+  height: 500px;
 }
 
 #hero-five {
@@ -312,7 +325,7 @@ page {
   margin-left: -100px;
   width: 300px;
   height: 300px;
-  background-color: #347593;
+  background-color: #038088;
 }
 
 #circle-two-2 {
@@ -320,7 +333,7 @@ page {
   margin-left: 160px;
   width: 160px;
   height: 160px;
-  background-color: #347593;
+  background-color: #038088;
 }
 
 #circle-five {
@@ -421,7 +434,7 @@ page {
   }
 
   h2 {
-    color: #EF9100;
+    color: #F1C232;
   }
 
   h3 {
