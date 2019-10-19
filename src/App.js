@@ -93,6 +93,7 @@ class App extends React.Component {
         body: JSON.stringify({ email: this.state.value })
       })
       alert('Thank you for subscribing!');
+      window.location.reload(false);
     }
     event.preventDefault();
   }
